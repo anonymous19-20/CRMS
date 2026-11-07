@@ -96,19 +96,20 @@ namespace ComputerRepairManagementSystem
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnPassword);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(412, 12);
+            this.panel1.Location = new System.Drawing.Point(166, -22);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(507, 417);
             this.panel1.TabIndex = 4;
             // 
             // LoginForm
             // 
+            this.AcceptButton = this.btnPassword;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1326, 598);
+            this.ClientSize = new System.Drawing.Size(835, 530);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
