@@ -44,5 +44,10 @@ namespace ComputerRepairManagementSystem
         {
 
         }
+
+        private void txtModel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
