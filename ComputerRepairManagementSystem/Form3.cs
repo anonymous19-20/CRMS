@@ -39,5 +39,10 @@ namespace ComputerRepairManagementSystem
         {
             this.Close();
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

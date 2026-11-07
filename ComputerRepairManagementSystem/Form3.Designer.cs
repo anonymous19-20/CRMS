@@ -118,7 +118,7 @@ namespace ComputerRepairManagementSystem
             // 
             // dpCatogory
             // 
-            this.dpCatogory.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.dpCatogory.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.dpCatogory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.dpCatogory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dpCatogory.FormattingEnabled = true;
@@ -185,6 +185,7 @@ namespace ComputerRepairManagementSystem
             this.btnReset.TabIndex = 13;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSave
             // 
