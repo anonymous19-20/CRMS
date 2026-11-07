@@ -1,7 +1,7 @@
 ﻿
 namespace ComputerRepairManagementSystem
 {
-    partial class Form3
+    partial class DataForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,211 +29,225 @@ namespace ComputerRepairManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataForm));
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.lbName = new System.Windows.Forms.Label();
+            this.lbPhoneNumber = new System.Windows.Forms.Label();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtModel = new System.Windows.Forms.TextBox();
+            this.lbModel = new System.Windows.Forms.Label();
+            this.dpCatogory = new System.Windows.Forms.ComboBox();
+            this.lbCatagory = new System.Windows.Forms.Label();
+            this.PanData = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.lbDescription = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.PanData.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(102, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtName.Location = new System.Drawing.Point(102, 42);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 0;
             // 
-            // textBox2
+            // txtPhone
             // 
-            this.textBox2.Location = new System.Drawing.Point(348, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtPhone.Location = new System.Drawing.Point(348, 42);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(100, 20);
+            this.txtPhone.TabIndex = 1;
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             // 
-            // label1
+            // lbName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.lbName.AutoSize = true;
+            this.lbName.Location = new System.Drawing.Point(40, 49);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(35, 13);
+            this.lbName.TabIndex = 2;
+            this.lbName.Text = "Name";
             // 
-            // label2
+            // lbPhoneNumber
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(296, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lbPhoneNumber.AutoSize = true;
+            this.lbPhoneNumber.Location = new System.Drawing.Point(296, 49);
+            this.lbPhoneNumber.Name = "lbPhoneNumber";
+            this.lbPhoneNumber.Size = new System.Drawing.Size(38, 13);
+            this.lbPhoneNumber.TabIndex = 3;
+            this.lbPhoneNumber.Text = "Phone";
+            this.lbPhoneNumber.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // lbEmail
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(151, 196);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.Location = new System.Drawing.Point(151, 196);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(32, 13);
+            this.lbEmail.TabIndex = 4;
+            this.lbEmail.Text = "Email";
+            this.lbEmail.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(216, 189);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(201, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtEmail.Location = new System.Drawing.Point(216, 189);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(201, 20);
+            this.txtEmail.TabIndex = 5;
             // 
-            // textBox4
+            // txtModel
             // 
-            this.textBox4.Location = new System.Drawing.Point(348, 108);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 6;
+            this.txtModel.Location = new System.Drawing.Point(348, 108);
+            this.txtModel.Name = "txtModel";
+            this.txtModel.Size = new System.Drawing.Size(100, 20);
+            this.txtModel.TabIndex = 6;
             // 
-            // label4
+            // lbModel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(296, 115);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "label4";
+            this.lbModel.AutoSize = true;
+            this.lbModel.Location = new System.Drawing.Point(296, 115);
+            this.lbModel.Name = "lbModel";
+            this.lbModel.Size = new System.Drawing.Size(36, 13);
+            this.lbModel.TabIndex = 7;
+            this.lbModel.Text = "Model";
             // 
-            // comboBox1
+            // dpCatogory
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.dpCatogory.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.dpCatogory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dpCatogory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dpCatogory.FormattingEnabled = true;
+            this.dpCatogory.Items.AddRange(new object[] {
             "Mobile",
             "Tablet",
             "IPad",
             "Earphones"});
-            this.comboBox1.Location = new System.Drawing.Point(102, 115);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 8;
+            this.dpCatogory.Location = new System.Drawing.Point(102, 115);
+            this.dpCatogory.Name = "dpCatogory";
+            this.dpCatogory.Size = new System.Drawing.Size(100, 21);
+            this.dpCatogory.TabIndex = 8;
             // 
-            // label5
+            // lbCatagory
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 123);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "label5";
+            this.lbCatagory.AutoSize = true;
+            this.lbCatagory.Location = new System.Drawing.Point(40, 123);
+            this.lbCatagory.Name = "lbCatagory";
+            this.lbCatagory.Size = new System.Drawing.Size(49, 13);
+            this.lbCatagory.TabIndex = 9;
+            this.lbCatagory.Text = "Catogory";
             // 
-            // panel1
+            // PanData
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(12, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(595, 443);
-            this.panel1.TabIndex = 10;
+            this.PanData.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PanData.Controls.Add(this.btnExit);
+            this.PanData.Controls.Add(this.btnReset);
+            this.PanData.Controls.Add(this.btnSave);
+            this.PanData.Controls.Add(this.lbDescription);
+            this.PanData.Controls.Add(this.txtDescription);
+            this.PanData.Controls.Add(this.txtEmail);
+            this.PanData.Controls.Add(this.lbCatagory);
+            this.PanData.Controls.Add(this.lbEmail);
+            this.PanData.Controls.Add(this.dpCatogory);
+            this.PanData.Controls.Add(this.txtName);
+            this.PanData.Controls.Add(this.lbModel);
+            this.PanData.Controls.Add(this.lbName);
+            this.PanData.Controls.Add(this.txtModel);
+            this.PanData.Controls.Add(this.txtPhone);
+            this.PanData.Controls.Add(this.lbPhoneNumber);
+            this.PanData.Location = new System.Drawing.Point(13, 2);
+            this.PanData.Name = "PanData";
+            this.PanData.Size = new System.Drawing.Size(595, 443);
+            this.PanData.TabIndex = 10;
             // 
-            // textBox5
+            // btnExit
             // 
-            this.textBox5.Location = new System.Drawing.Point(136, 246);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(342, 95);
-            this.textBox5.TabIndex = 10;
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.Location = new System.Drawing.Point(385, 400);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(63, 33);
+            this.btnExit.TabIndex = 14;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // label6
+            // btnReset
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(68, 284);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "label6";
+            this.btnReset.BackColor = System.Drawing.Color.Yellow;
+            this.btnReset.Location = new System.Drawing.Point(454, 400);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(63, 33);
+            this.btnReset.TabIndex = 13;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.Location = new System.Drawing.Point(523, 401);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 33);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSave.BackColor = System.Drawing.Color.Lime;
+            this.btnSave.Location = new System.Drawing.Point(523, 401);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(63, 33);
+            this.btnSave.TabIndex = 12;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // lbDescription
             // 
-            this.button2.Location = new System.Drawing.Point(454, 400);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 33);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lbDescription.AutoSize = true;
+            this.lbDescription.Location = new System.Drawing.Point(68, 284);
+            this.lbDescription.Name = "lbDescription";
+            this.lbDescription.Size = new System.Drawing.Size(60, 13);
+            this.lbDescription.TabIndex = 11;
+            this.lbDescription.Text = "Description";
             // 
-            // button3
+            // txtDescription
             // 
-            this.button3.Location = new System.Drawing.Point(385, 400);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(63, 33);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.txtDescription.Location = new System.Drawing.Point(136, 246);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(342, 95);
+            this.txtDescription.TabIndex = 10;
             // 
-            // Form3
+            // DataForm
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 448);
-            this.Controls.Add(this.panel1);
-            this.Name = "Form3";
-            this.Text = "Form3";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.BackColor = System.Drawing.Color.White;
+            this.CancelButton = this.btnExit;
+            this.ClientSize = new System.Drawing.Size(613, 448);
+            this.Controls.Add(this.PanData);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "DataForm";
+            this.Text = "Data";
+            this.PanData.ResumeLayout(false);
+            this.PanData.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Label lbPhoneNumber;
+        private System.Windows.Forms.Label lbEmail;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtModel;
+        private System.Windows.Forms.Label lbModel;
+        private System.Windows.Forms.ComboBox dpCatogory;
+        private System.Windows.Forms.Label lbCatagory;
+        private System.Windows.Forms.Panel PanData;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lbDescription;
+        private System.Windows.Forms.TextBox txtDescription;
     }
 }

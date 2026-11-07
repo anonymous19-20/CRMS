@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ComputerRepairManagementSystem
 {
-    public partial class Form3 : Form
+    public partial class DataForm : Form
     {
-        public Form3()
+        public DataForm()
         {
             InitializeComponent();
         }
@@ -25,6 +25,19 @@ namespace ComputerRepairManagementSystem
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
