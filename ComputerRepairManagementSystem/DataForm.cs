@@ -42,7 +42,12 @@ namespace ComputerRepairManagementSystem
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-
+            txtName.Clear();
+            txtPhone.Clear();
+            txtModel.Clear();
+            txtEmail.Clear();
+            txtDescription.Clear();
+            dpCatogory.ResetText();
         }
 
         private void txtModel_TextChanged(object sender, EventArgs e)

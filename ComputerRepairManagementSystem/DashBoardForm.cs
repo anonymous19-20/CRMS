@@ -22,5 +22,10 @@ namespace ComputerRepairManagementSystem
             DataForm df = new DataForm();
             df.Show();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

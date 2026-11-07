@@ -31,7 +31,7 @@ namespace ComputerRepairManagementSystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtPasswoed = new System.Windows.Forms.Label();
             this.btnPassword = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -46,34 +46,33 @@ namespace ComputerRepairManagementSystem
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txtPassword.Location = new System.Drawing.Point(220, 329);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.txtPassword.Location = new System.Drawing.Point(147, 214);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(7);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(290, 48);
+            this.txtPassword.Size = new System.Drawing.Size(194, 35);
             this.txtPassword.TabIndex = 0;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
-            // label1
+            // txtPasswoed
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(42, 340);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 43);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Password";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.txtPasswoed.BackColor = System.Drawing.Color.Transparent;
+            this.txtPasswoed.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasswoed.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtPasswoed.Location = new System.Drawing.Point(28, 221);
+            this.txtPasswoed.Name = "txtPasswoed";
+            this.txtPasswoed.Size = new System.Drawing.Size(89, 28);
+            this.txtPasswoed.TabIndex = 1;
+            this.txtPasswoed.Text = "Password";
+            this.txtPasswoed.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnPassword
             // 
             this.btnPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPassword.Location = new System.Drawing.Point(220, 414);
-            this.btnPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPassword.Location = new System.Drawing.Point(147, 269);
             this.btnPassword.Name = "btnPassword";
-            this.btnPassword.Size = new System.Drawing.Size(291, 48);
+            this.btnPassword.Size = new System.Drawing.Size(194, 31);
             this.btnPassword.TabIndex = 2;
             this.btnPassword.Text = "Login";
             this.btnPassword.UseVisualStyleBackColor = true;
@@ -83,10 +82,9 @@ namespace ComputerRepairManagementSystem
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(166, 78);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(111, 51);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(396, 257);
+            this.pictureBox1.Size = new System.Drawing.Size(264, 167);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -99,26 +97,24 @@ namespace ComputerRepairManagementSystem
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnPassword);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(249, -34);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Controls.Add(this.txtPasswoed);
+            this.panel1.Location = new System.Drawing.Point(166, -22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(760, 642);
+            this.panel1.Size = new System.Drawing.Size(507, 417);
             this.panel1.TabIndex = 4;
             // 
             // LoginForm
             // 
             this.AcceptButton = this.btnPassword;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1252, 815);
+            this.ClientSize = new System.Drawing.Size(835, 487);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "LoginForm";
             this.Text = "Computer Repairing Management System";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -131,7 +127,7 @@ namespace ComputerRepairManagementSystem
         #endregion
 
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtPasswoed;
         private System.Windows.Forms.Button btnPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
