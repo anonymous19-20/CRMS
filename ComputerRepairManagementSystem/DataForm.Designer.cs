@@ -38,7 +38,7 @@ namespace ComputerRepairManagementSystem
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.lbModel = new System.Windows.Forms.Label();
-            this.dpCatogory = new System.Windows.Forms.ComboBox();
+            this.dbCatogory = new System.Windows.Forms.ComboBox();
             this.lbCatagory = new System.Windows.Forms.Label();
             this.PanData = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
@@ -121,21 +121,21 @@ namespace ComputerRepairManagementSystem
             this.lbModel.TabIndex = 7;
             this.lbModel.Text = "Model";
             // 
-            // dpCatogory
+            // dbCatogory
             // 
-            this.dpCatogory.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.dpCatogory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.dpCatogory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dpCatogory.FormattingEnabled = true;
-            this.dpCatogory.Items.AddRange(new object[] {
+            this.dbCatogory.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.dbCatogory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dbCatogory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dbCatogory.FormattingEnabled = true;
+            this.dbCatogory.Items.AddRange(new object[] {
             "Mobile",
             "Tablet",
             "IPad",
             "Earphones"});
-            this.dpCatogory.Location = new System.Drawing.Point(102, 115);
-            this.dpCatogory.Name = "dpCatogory";
-            this.dpCatogory.Size = new System.Drawing.Size(100, 21);
-            this.dpCatogory.TabIndex = 8;
+            this.dbCatogory.Location = new System.Drawing.Point(102, 115);
+            this.dbCatogory.Name = "dbCatogory";
+            this.dbCatogory.Size = new System.Drawing.Size(100, 21);
+            this.dbCatogory.TabIndex = 8;
             // 
             // lbCatagory
             // 
@@ -158,7 +158,7 @@ namespace ComputerRepairManagementSystem
             this.PanData.Controls.Add(this.txtEmail);
             this.PanData.Controls.Add(this.lbCatagory);
             this.PanData.Controls.Add(this.lbEmail);
-            this.PanData.Controls.Add(this.dpCatogory);
+            this.PanData.Controls.Add(this.dbCatogory);
             this.PanData.Controls.Add(this.txtName);
             this.PanData.Controls.Add(this.lbModel);
             this.PanData.Controls.Add(this.lbName);
@@ -205,6 +205,7 @@ namespace ComputerRepairManagementSystem
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lbDescription
             // 
@@ -252,7 +253,7 @@ namespace ComputerRepairManagementSystem
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label lbModel;
-        private System.Windows.Forms.ComboBox dpCatogory;
+        private System.Windows.Forms.ComboBox dbCatogory;
         private System.Windows.Forms.Label lbCatagory;
         private System.Windows.Forms.Panel PanData;
         private System.Windows.Forms.Button btnExit;
