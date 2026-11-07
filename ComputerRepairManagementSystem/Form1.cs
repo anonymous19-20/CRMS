@@ -31,6 +31,7 @@ namespace ComputerRepairManagementSystem
             else
             {
                 MessageBox.Show("Wrong PAssword");
+                txtPassword.Clear();
             }
         }
 
