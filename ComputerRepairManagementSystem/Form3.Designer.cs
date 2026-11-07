@@ -51,34 +51,38 @@ namespace ComputerRepairManagementSystem
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(102, 42);
+            this.txtName.Location = new System.Drawing.Point(153, 65);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.Size = new System.Drawing.Size(148, 26);
             this.txtName.TabIndex = 0;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(348, 42);
+            this.txtPhone.Location = new System.Drawing.Point(522, 65);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(100, 20);
+            this.txtPhone.Size = new System.Drawing.Size(148, 26);
             this.txtPhone.TabIndex = 1;
             this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             // 
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(40, 49);
+            this.lbName.Location = new System.Drawing.Point(60, 75);
+            this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(35, 13);
+            this.lbName.Size = new System.Drawing.Size(51, 20);
             this.lbName.TabIndex = 2;
             this.lbName.Text = "Name";
             // 
             // lbPhoneNumber
             // 
             this.lbPhoneNumber.AutoSize = true;
-            this.lbPhoneNumber.Location = new System.Drawing.Point(296, 49);
+            this.lbPhoneNumber.Location = new System.Drawing.Point(444, 75);
+            this.lbPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhoneNumber.Name = "lbPhoneNumber";
-            this.lbPhoneNumber.Size = new System.Drawing.Size(38, 13);
+            this.lbPhoneNumber.Size = new System.Drawing.Size(55, 20);
             this.lbPhoneNumber.TabIndex = 3;
             this.lbPhoneNumber.Text = "Phone";
             this.lbPhoneNumber.Click += new System.EventHandler(this.label2_Click);
@@ -86,33 +90,38 @@ namespace ComputerRepairManagementSystem
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(151, 196);
+            this.lbEmail.Location = new System.Drawing.Point(226, 302);
+            this.lbEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(32, 13);
+            this.lbEmail.Size = new System.Drawing.Size(48, 20);
             this.lbEmail.TabIndex = 4;
             this.lbEmail.Text = "Email";
             this.lbEmail.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(216, 189);
+            this.txtEmail.Location = new System.Drawing.Point(324, 291);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(201, 20);
+            this.txtEmail.Size = new System.Drawing.Size(300, 26);
             this.txtEmail.TabIndex = 5;
             // 
             // txtModel
             // 
-            this.txtModel.Location = new System.Drawing.Point(348, 108);
+            this.txtModel.Location = new System.Drawing.Point(522, 166);
+            this.txtModel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(100, 20);
+            this.txtModel.Size = new System.Drawing.Size(148, 26);
             this.txtModel.TabIndex = 6;
+            this.txtModel.TextChanged += new System.EventHandler(this.txtModel_TextChanged);
             // 
             // lbModel
             // 
             this.lbModel.AutoSize = true;
-            this.lbModel.Location = new System.Drawing.Point(296, 115);
+            this.lbModel.Location = new System.Drawing.Point(444, 177);
+            this.lbModel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbModel.Name = "lbModel";
-            this.lbModel.Size = new System.Drawing.Size(36, 13);
+            this.lbModel.Size = new System.Drawing.Size(52, 20);
             this.lbModel.TabIndex = 7;
             this.lbModel.Text = "Model";
             // 
@@ -127,17 +136,19 @@ namespace ComputerRepairManagementSystem
             "Tablet",
             "IPad",
             "Earphones"});
-            this.dpCatogory.Location = new System.Drawing.Point(102, 115);
+            this.dpCatogory.Location = new System.Drawing.Point(153, 177);
+            this.dpCatogory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dpCatogory.Name = "dpCatogory";
-            this.dpCatogory.Size = new System.Drawing.Size(100, 21);
+            this.dpCatogory.Size = new System.Drawing.Size(148, 28);
             this.dpCatogory.TabIndex = 8;
             // 
             // lbCatagory
             // 
             this.lbCatagory.AutoSize = true;
-            this.lbCatagory.Location = new System.Drawing.Point(40, 123);
+            this.lbCatagory.Location = new System.Drawing.Point(60, 189);
+            this.lbCatagory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCatagory.Name = "lbCatagory";
-            this.lbCatagory.Size = new System.Drawing.Size(49, 13);
+            this.lbCatagory.Size = new System.Drawing.Size(73, 20);
             this.lbCatagory.TabIndex = 9;
             this.lbCatagory.Text = "Catogory";
             // 
@@ -159,18 +170,20 @@ namespace ComputerRepairManagementSystem
             this.PanData.Controls.Add(this.txtModel);
             this.PanData.Controls.Add(this.txtPhone);
             this.PanData.Controls.Add(this.lbPhoneNumber);
-            this.PanData.Location = new System.Drawing.Point(13, 2);
+            this.PanData.Location = new System.Drawing.Point(20, 3);
+            this.PanData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PanData.Name = "PanData";
-            this.PanData.Size = new System.Drawing.Size(595, 443);
+            this.PanData.Size = new System.Drawing.Size(892, 682);
             this.PanData.TabIndex = 10;
             // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Red;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(385, 400);
+            this.btnExit.Location = new System.Drawing.Point(578, 615);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(63, 33);
+            this.btnExit.Size = new System.Drawing.Size(94, 51);
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -179,9 +192,10 @@ namespace ComputerRepairManagementSystem
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.Yellow;
-            this.btnReset.Location = new System.Drawing.Point(454, 400);
+            this.btnReset.Location = new System.Drawing.Point(681, 615);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(63, 33);
+            this.btnReset.Size = new System.Drawing.Size(94, 51);
             this.btnReset.TabIndex = 13;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -190,9 +204,10 @@ namespace ComputerRepairManagementSystem
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Lime;
-            this.btnSave.Location = new System.Drawing.Point(523, 401);
+            this.btnSave.Location = new System.Drawing.Point(784, 617);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(63, 33);
+            this.btnSave.Size = new System.Drawing.Size(94, 51);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -200,30 +215,33 @@ namespace ComputerRepairManagementSystem
             // lbDescription
             // 
             this.lbDescription.AutoSize = true;
-            this.lbDescription.Location = new System.Drawing.Point(68, 284);
+            this.lbDescription.Location = new System.Drawing.Point(102, 437);
+            this.lbDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDescription.Name = "lbDescription";
-            this.lbDescription.Size = new System.Drawing.Size(60, 13);
+            this.lbDescription.Size = new System.Drawing.Size(89, 20);
             this.lbDescription.TabIndex = 11;
             this.lbDescription.Text = "Description";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(136, 246);
+            this.txtDescription.Location = new System.Drawing.Point(204, 378);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(342, 95);
+            this.txtDescription.Size = new System.Drawing.Size(511, 144);
             this.txtDescription.TabIndex = 10;
             // 
             // DataForm
             // 
             this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(613, 448);
+            this.ClientSize = new System.Drawing.Size(920, 689);
             this.Controls.Add(this.PanData);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DataForm";
             this.Text = "Data";
             this.PanData.ResumeLayout(false);

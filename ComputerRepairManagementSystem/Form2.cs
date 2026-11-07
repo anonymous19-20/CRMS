@@ -19,7 +19,6 @@ namespace ComputerRepairManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
             DataForm df = new DataForm();
             df.Show();
         }
