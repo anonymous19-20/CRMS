@@ -52,5 +52,10 @@ namespace ComputerRepairManagementSystem
         {
 
         }
+
+        private void dgView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -98,6 +98,7 @@ namespace ComputerRepairManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
+            this.Close();
         }
 
         private void PanData_Paint(object sender, PaintEventArgs e)
