@@ -165,9 +165,9 @@ namespace ComputerRepairManagementSystem
             this.PanData.Controls.Add(this.txtModel);
             this.PanData.Controls.Add(this.txtPhone);
             this.PanData.Controls.Add(this.lbPhoneNumber);
-            this.PanData.Location = new System.Drawing.Point(13, 2);
+            this.PanData.Location = new System.Drawing.Point(1, 2);
             this.PanData.Name = "PanData";
-            this.PanData.Size = new System.Drawing.Size(595, 443);
+            this.PanData.Size = new System.Drawing.Size(619, 447);
             this.PanData.TabIndex = 10;
             // 
             // btnExit
