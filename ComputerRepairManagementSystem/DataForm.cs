@@ -68,5 +68,10 @@ namespace ComputerRepairManagementSystem
 
 
         }
+
+        private void PanData_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -16,6 +16,9 @@ namespace ComputerRepairManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            //Database.CreateTable();
+
             Application.Run(new LoginForm());
         }
     }
