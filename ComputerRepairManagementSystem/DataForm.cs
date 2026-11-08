@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
+using System.IO;
+
 
 namespace ComputerRepairManagementSystem
 {
@@ -59,14 +62,42 @@ namespace ComputerRepairManagementSystem
         {
             string name = txtName.Text;
             string phone = txtPhone.Text;
-            string db = dbCatogory.Text;
+            string category = dbCatogory.Text;
             string model = txtModel.Text;
             string email = txtEmail.Text;
             string description = txtDescription.Text;
 
+            string dbPath = Path.Combine(Application.StartupPath, "CRMSdb.db");
 
+            try
+            {
+                using (SQLiteConnection con = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
+                {
+                    con.Open();
 
+                    using (SQLiteCommand cmd = new SQLiteCommand(con))
+                    {
+                        cmd.CommandText = @"INSERT INTO CustomerData
+                                    (Name, Phone, Catagory, Model, Email, Description)
+                                    VALUES (@name, @phone, @category, @model, @email, @description)";
+                        cmd.Parameters.AddWithValue("@name", name);
+                        cmd.Parameters.AddWithValue("@phone", phone);
+                        cmd.Parameters.AddWithValue("@category", category);
+                        cmd.Parameters.AddWithValue("@model", model);
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@description", description);
 
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Data Entered Successfully");
+                    }
+                }
+                btnReset_Click(sender, e);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void PanData_Paint(object sender, PaintEventArgs e)
