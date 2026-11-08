@@ -27,5 +27,10 @@ namespace ComputerRepairManagementSystem
         {
             this.Close();
         }
+
+        private void DashBForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
