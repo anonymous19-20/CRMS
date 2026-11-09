@@ -67,7 +67,7 @@ namespace ComputerRepairManagementSystem
             string email = txtEmail.Text;
             string description = txtDescription.Text;
 
-            string dbPath = Path.Combine(Application.StartupPath, "CRMSdb.db");
+            string dbPath = Path.Combine(Application.StartupPath, "Database","CRMSdb.db");
 
             try
             {
