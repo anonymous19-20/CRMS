@@ -46,7 +46,7 @@ namespace ComputerRepairManagementSystem
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txtPassword.Location = new System.Drawing.Point(167, 235);
+            this.txtPassword.Location = new System.Drawing.Point(167, 268);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(7);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -60,7 +60,7 @@ namespace ComputerRepairManagementSystem
             this.txtPasswoed.BackColor = System.Drawing.Color.Transparent;
             this.txtPasswoed.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasswoed.ForeColor = System.Drawing.Color.AliceBlue;
-            this.txtPasswoed.Location = new System.Drawing.Point(68, 245);
+            this.txtPasswoed.Location = new System.Drawing.Point(59, 277);
             this.txtPasswoed.Name = "txtPasswoed";
             this.txtPasswoed.Size = new System.Drawing.Size(89, 28);
             this.txtPasswoed.TabIndex = 1;
@@ -70,7 +70,7 @@ namespace ComputerRepairManagementSystem
             // btnPassword
             // 
             this.btnPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPassword.Location = new System.Drawing.Point(167, 280);
+            this.btnPassword.Location = new System.Drawing.Point(167, 313);
             this.btnPassword.Name = "btnPassword";
             this.btnPassword.Size = new System.Drawing.Size(194, 31);
             this.btnPassword.TabIndex = 2;
@@ -82,9 +82,9 @@ namespace ComputerRepairManagementSystem
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(102, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(83, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(314, 194);
+            this.pictureBox1.Size = new System.Drawing.Size(353, 233);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
