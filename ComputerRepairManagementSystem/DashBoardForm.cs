@@ -17,9 +17,16 @@ namespace ComputerRepairManagementSystem
         {
             InitializeComponent();
             RoundButton(btnAdd, 60);
-            RoundButton(btnExit, 60);
+            RoundButton(btnExit, 20);
             btnAdd.TextAlign = ContentAlignment.MiddleCenter;
             btnAdd.Padding = new Padding(0);
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.TabStop = false;
+            btnExit.FlatAppearance.MouseOverBackColor = Color.Red;
+            btnExit.FlatAppearance.MouseDownBackColor = Color.DarkRed;
+            btnExit.TextAlign = ContentAlignment.MiddleCenter;
+
         }
         private void RoundButton(Button btn, int radius)
         {
