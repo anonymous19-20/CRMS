@@ -32,9 +32,9 @@ namespace ComputerRepairManagementSystem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtPasswoed = new System.Windows.Forms.Label();
-            this.btnPassword = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,17 +67,6 @@ namespace ComputerRepairManagementSystem
             this.txtPasswoed.Text = "Password";
             this.txtPasswoed.Click += new System.EventHandler(this.label1_Click);
             // 
-            // btnPassword
-            // 
-            this.btnPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPassword.Location = new System.Drawing.Point(209, 315);
-            this.btnPassword.Name = "btnPassword";
-            this.btnPassword.Size = new System.Drawing.Size(133, 40);
-            this.btnPassword.TabIndex = 2;
-            this.btnPassword.Text = "Login";
-            this.btnPassword.UseVisualStyleBackColor = true;
-            this.btnPassword.Click += new System.EventHandler(this.btnPassword_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -95,18 +84,35 @@ namespace ComputerRepairManagementSystem
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnPassword);
             this.panel1.Controls.Add(this.txtPasswoed);
             this.panel1.Location = new System.Drawing.Point(166, -22);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(507, 417);
             this.panel1.TabIndex = 4;
             // 
+            // btnLogin
+            // 
+            this.btnLogin.AutoRoundedCorners = true;
+            this.btnLogin.BorderColor = System.Drawing.Color.White;
+            this.btnLogin.BorderThickness = 1;
+            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(208, 370);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(107, 38);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
             // LoginForm
             // 
-            this.AcceptButton = this.btnPassword;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
@@ -130,9 +136,9 @@ namespace ComputerRepairManagementSystem
 
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label txtPasswoed;
-        private System.Windows.Forms.Button btnPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button btnLogin;
     }
 }
 

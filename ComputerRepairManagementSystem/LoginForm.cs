@@ -22,20 +22,7 @@ namespace ComputerRepairManagementSystem
 
         private void btnPassword_Click(object sender, EventArgs e)
         {
-            string pass = txtPassword.Text;
-
-            if(pass == "123")
-            {
-                MessageBox.Show("Login_Succesfull");
-                txtPassword.Clear();
-                DashBForm dbf = new DashBForm();
-                dbf.Show();
-            }
-            else
-            {
-                MessageBox.Show("Wrong PAssword");
-                txtPassword.Clear();
-            }
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -56,6 +43,24 @@ namespace ComputerRepairManagementSystem
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string pass = txtPassword.Text;
+
+            if (pass == "123")
+            {
+                MessageBox.Show("Login_Succesfull");
+                txtPassword.Clear();
+                DashBForm dbf = new DashBForm();
+                dbf.Show();
+            }
+            else
+            {
+                MessageBox.Show("Wrong PAssword");
+                txtPassword.Clear();
+            }
         }
     }
 }
