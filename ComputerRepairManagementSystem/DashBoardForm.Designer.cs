@@ -36,11 +36,17 @@ namespace ComputerRepairManagementSystem
             // 
             // btnAdd
             // 
+<<<<<<< HEAD
             this.btnAdd.BackColor = System.Drawing.Color.Yellow;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(695, 338);
+=======
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(710, 348);
+>>>>>>> origin/master
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(78, 63);
             this.btnAdd.TabIndex = 0;
@@ -76,6 +82,7 @@ namespace ComputerRepairManagementSystem
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DashBForm";
             this.Text = "DashBoard";
+            this.Load += new System.EventHandler(this.DashBForm_Load);
             this.ResumeLayout(false);
 
         }

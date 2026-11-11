@@ -54,5 +54,15 @@ namespace ComputerRepairManagementSystem
         {
             this.Close();
         }
+
+        private void DashBForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
