@@ -45,12 +45,7 @@ namespace ComputerRepairManagementSystem
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            txtName.Clear();
-            txtPhone.Clear();
-            txtModel.Clear();
-            txtEmail.Clear();
-            txtDescription.Clear();
-            dbCatogory.ResetText();
+           
         }
 
         private void txtModel_TextChanged(object sender, EventArgs e)
@@ -60,6 +55,46 @@ namespace ComputerRepairManagementSystem
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void PanData_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            txtName.Clear();
+            txtPhone.Clear();
+            txtModel.Clear();
+            txtEmail.Clear();
+            txtDescription.Clear();
+            dbCatogory.ResetText();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
             string name = txtName.Text;
             string phone = txtPhone.Text;
             string category = dbCatogory.Text;
@@ -67,7 +102,7 @@ namespace ComputerRepairManagementSystem
             string email = txtEmail.Text;
             string description = txtDescription.Text;
 
-            string dbPath = Path.Combine(Application.StartupPath, "Database","CRMSdb.db");
+            string dbPath = Path.Combine(Application.StartupPath, "Database", "CRMSdb.db");
 
             try
             {
@@ -99,11 +134,6 @@ namespace ComputerRepairManagementSystem
                 MessageBox.Show(ex.Message);
             }
             this.Close();
-        }
-
-        private void PanData_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
