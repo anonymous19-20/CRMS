@@ -275,6 +275,7 @@ namespace ComputerRepairManagementSystem
             this.txtPhone.Size = new System.Drawing.Size(100, 20);
             this.txtPhone.TabIndex = 16;
             this.txtPhone.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             // 
             // txtName
             // 
