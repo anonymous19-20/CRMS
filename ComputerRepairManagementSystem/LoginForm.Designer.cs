@@ -112,6 +112,7 @@ namespace ComputerRepairManagementSystem
             // 
             // btnExit
             // 
+            this.btnExit.Animated = true;
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.BorderColor = System.Drawing.Color.Transparent;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
