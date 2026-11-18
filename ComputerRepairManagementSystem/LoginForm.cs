@@ -49,9 +49,8 @@ namespace ComputerRepairManagementSystem
         {
             string pass = txtPassword.Text;
 
-            if (pass == "123")
+            if (pass == "")
             {
-                MessageBox.Show("Login_Succesfull");
                 txtPassword.Clear();
                 DashBForm dbf = new DashBForm();
                 dbf.Show();
@@ -70,7 +69,7 @@ namespace ComputerRepairManagementSystem
 
         private void btnExit_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void LoginForm_Shown(object sender, EventArgs e)
