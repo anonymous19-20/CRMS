@@ -54,6 +54,7 @@ namespace ComputerRepairManagementSystem
                 txtPassword.Clear();
                 DashBForm dbf = new DashBForm();
                 dbf.Show();
+                this.Hide();
             }
             else
             {

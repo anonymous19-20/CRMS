@@ -355,6 +355,7 @@ namespace ComputerRepairManagementSystem
             this.Name = "DataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Data";
+            this.Load += new System.EventHandler(this.DataForm_Load);
             this.PanData.ResumeLayout(false);
             this.PanData.PerformLayout();
             this.ResumeLayout(false);

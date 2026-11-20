@@ -22,11 +22,11 @@ namespace ComputerRepairManagementSystem
 
         }
         
-        private string dbPath = Path.Combine(Application.StartupPath, "Database", "CRMSdb.db");
+        private readonly string dbPath = "C:\\Users\\Anonymous\\Desktop\\CRMS\\ComputerRepairManagementSystem\\Database\\CRMSdb.db";
         private DataTable table;
 
 
-        private void LoadData()
+        public void LoadData()
         {
            using(var con = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
             {
@@ -45,30 +45,20 @@ namespace ComputerRepairManagementSystem
                 }
             }
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-           
-        }
-
+      
         private void DashBForm_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void dgView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             DataForm df = new DataForm();
-            df.Show();
+            df.FormClosed += ( s, args) =>
+             {
+                 LoadData();
+             };
+            df.ShowDialog();
+
         }
 
         private void btnExit_Click_1(object sender, EventArgs e)

@@ -47,27 +47,10 @@ namespace ComputerRepairManagementSystem
         {
            
         }
-
-        private void txtModel_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void PanData_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void lbName_Click(object sender, EventArgs e)
         {
 
@@ -102,7 +85,7 @@ namespace ComputerRepairManagementSystem
             string email = txtEmail.Text;
             string description = txtDescription.Text;
 
-            string dbPath = Path.Combine(Application.StartupPath, "Database", "CRMSdb.db");
+            string dbPath = "C:\\Users\\Anonymous\\Desktop\\CRMS\\ComputerRepairManagementSystem\\Database\\CRMSdb.db";
 
             try
             {
@@ -124,7 +107,8 @@ namespace ComputerRepairManagementSystem
 
                         cmd.ExecuteNonQuery();
 
-                        MessageBox.Show("Data Entered Successfully");
+                      //  MessageBox.Show("Data Entered Successfully");
+
                     }
                 }
                 btnReset_Click(sender, e);
@@ -134,11 +118,12 @@ namespace ComputerRepairManagementSystem
                 MessageBox.Show(ex.Message);
             }
             this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+            
          
+        }
+        private void DataForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
