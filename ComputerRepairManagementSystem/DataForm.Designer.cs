@@ -363,7 +363,7 @@ namespace ComputerRepairManagementSystem
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(600, 449);
             this.Controls.Add(this.PanData);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
