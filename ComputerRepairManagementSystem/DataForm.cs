@@ -85,41 +85,55 @@ namespace ComputerRepairManagementSystem
             string email = txtEmail.Text;
             string description = txtDescription.Text;
 
-            string dbPath = "C:\\Users\\Anonymous\\Desktop\\CRMS\\ComputerRepairManagementSystem\\Database\\CRMSdb.db";
-
-            try
+            if (name == "" || phone == "" || category == "" || model == "" || description == "" )
             {
-                using (SQLiteConnection con = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    con.Open();
+                MessageBox.Show("One or More fields are empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
 
-                    using (SQLiteCommand cmd = new SQLiteCommand(con))
+                if (phone.Length != 11)
+                {
+                    MessageBox.Show("Phone Number must contain 11 digits", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    string dbPath = "C:\\Users\\Anonymous\\Desktop\\CRMS\\ComputerRepairManagementSystem\\Database\\CRMSdb.db";
+
+                    try
                     {
-                        cmd.CommandText = @"INSERT INTO CustomerData
+                        using (SQLiteConnection con = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
+                        {
+                            con.Open();
+
+                            using (SQLiteCommand cmd = new SQLiteCommand(con))
+                            {
+                                cmd.CommandText = @"INSERT INTO CustomerData
                                     (Name, Phone, Catagory, Model, Email, Description)
                                     VALUES (@name, @phone, @category, @model, @email, @description)";
-                        cmd.Parameters.AddWithValue("@name", name);
-                        cmd.Parameters.AddWithValue("@phone", phone);
-                        cmd.Parameters.AddWithValue("@category", category);
-                        cmd.Parameters.AddWithValue("@model", model);
-                        cmd.Parameters.AddWithValue("@email", email);
-                        cmd.Parameters.AddWithValue("@description", description);
+                                cmd.Parameters.AddWithValue("@name", name);
+                                cmd.Parameters.AddWithValue("@phone", phone);
+                                cmd.Parameters.AddWithValue("@category", category);
+                                cmd.Parameters.AddWithValue("@model", model);
+                                cmd.Parameters.AddWithValue("@email", email);
+                                cmd.Parameters.AddWithValue("@description", description);
 
-                        cmd.ExecuteNonQuery();
+                                cmd.ExecuteNonQuery();
 
-                      //  MessageBox.Show("Data Entered Successfully");
+                                //  MessageBox.Show("Data Entered Successfully");
 
+                            }
+                        }
+                        btnReset_Click(sender, e);
                     }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    this.Close();
                 }
-                btnReset_Click(sender, e);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            this.Close();
-            
-         
         }
         private void DataForm_Load(object sender, EventArgs e)
         {
