@@ -139,6 +139,7 @@ namespace ComputerRepairManagementSystem
             this.DataView.ThemeStyle.RowsStyle.Height = 30;
             this.DataView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(243)))), ((int)(((byte)(90)))));
             this.DataView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataView_CellContentClick);
+            this.DataView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.DataView_DataBindingComplete);
             // 
             // TitleBar
             // 
