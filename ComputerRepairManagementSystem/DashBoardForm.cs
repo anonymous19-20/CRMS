@@ -94,25 +94,7 @@ namespace ComputerRepairManagementSystem
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            using(var con = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-            {
-                con.Open();
-                var phone = DataView.SelectedRows[0].Cells["Phone"].Value;
-                string query = $"DELETE FROM CustomerData WHERE Phone = @Phone";
-                using(var cmd = new SQLiteCommand(query, con))
-                {
-                    cmd.Parameters.AddWithValue("@Phone", phone);
-                    cmd.ExecuteNonQuery();
-                }
-            }
-            
-            LoadData();
-            MessageBox.Show("Deleted", "Success" , MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
 
-        private void DataView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
-        {
-            
         }
     }
 }
